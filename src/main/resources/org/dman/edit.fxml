@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="490.0" prefWidth="530.0" style="-fx-background-color: #252525;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" >
+    <TextField fx:id="nameEvent" layoutX="165.0" layoutY="10.0" prefHeight="25.0" prefWidth="350.0" style="-fx-background-color: #252525; -fx-border-color: WHITE; -fx-text-fill: WHITE;" text="Добавить описание события" />
+    <TextField fx:id="firstBookmaker" layoutX="165.0" layoutY="50.0" prefHeight="25.0" prefWidth="350.0" style="-fx-background-color: #252525; -fx-border-color: WHITE; -fx-text-fill: WHITE;" text="1xbet" />
+    <TextField fx:id="secondBookmaker" layoutX="165.0" layoutY="90.0" prefHeight="25.0" prefWidth="350.0" style="-fx-background-color: #252525; -fx-border-color: WHITE; -fx-text-fill: WHITE;" text="Vbet" />
+    <TextField fx:id="firstCoefficientValue" layoutX="165.0" layoutY="130.0" prefHeight="25.0" prefWidth="350.0" style="-fx-background-color: #252525; -fx-border-color: WHITE; -fx-text-fill: WHITE;" text="2" />
+    <TextField fx:id="secondCoefficientValue" layoutX="165.0" layoutY="170.0" prefHeight="25.0" prefWidth="350.0" style="-fx-background-color: #252525; -fx-border-color: WHITE; -fx-text-fill: WHITE;" text="3" />
+    <TextField fx:id="firstBetValue" layoutX="165.0" layoutY="210.0" prefHeight="25.0" prefWidth="350.0" style="-fx-background-color: #252525; -fx-border-color: WHITE; -fx-text-fill: WHITE;" text="1500" />
+    <TextField fx:id="secondBetValue" layoutX="165.0" layoutY="250.0" prefHeight="25.0" prefWidth="350.0" style="-fx-background-color: #252525; -fx-border-color: WHITE; -fx-text-fill: WHITE;" text="2500" />
+    <TextField fx:id="firstWinValue" layoutX="165.0" layoutY="290.0" prefHeight="25.0" prefWidth="350.0" style="-fx-background-color: #252525; -fx-border-color: WHITE; -fx-text-fill: WHITE;" text="3000" />
+    <TextField fx:id="secondWinValue" layoutX="165.0" layoutY="330.0" prefHeight="25.0" prefWidth="350.0" style="-fx-background-color: #252525; -fx-border-color: WHITE; -fx-text-fill: WHITE;" text="7500" />
+    <TextField fx:id="firstIssue" layoutX="165.0" layoutY="370.0" prefHeight="25.0" prefWidth="350.0" style="-fx-background-color: #252525; -fx-border-color: WHITE; -fx-text-fill: WHITE;" text="W1" />
+    <TextField fx:id="secondIssue" layoutX="165.0" layoutY="410.0" prefHeight="25.0" prefWidth="350.0" style="-fx-background-color: #252525; -fx-border-color: WHITE; -fx-text-fill: WHITE;" text="W2" />
+   <Label layoutX="5.0" layoutY="15.0" text="Название собьтия:" textFill="WHITE" />
+    <Label layoutX="5.0" layoutY="55.0" text="Первая БК:" textFill="WHITE" />
+    <Label layoutX="5.0" layoutY="95.0" text="Вторая БК:" textFill="WHITE" />
+    <Label layoutX="5.0" layoutY="135.0" text="Первый коэффициент:" textFill="WHITE" />
+    <Label layoutX="5.0" layoutY="175.0" text="Второй коэффициент:" textFill="WHITE" />
+    <Label layoutX="5.0" layoutY="215.0" text="Сумма первого плеча:" textFill="WHITE" />
+    <Label layoutX="5.0" layoutY="255.0" text="Сумма второго плеча:" textFill="WHITE" />
+    <Label layoutX="5.0" layoutY="295.0" text="Выигрыш с первого плеча:" textFill="WHITE" />
+    <Label layoutX="5.0" layoutY="335.0" text="Выигрыш со второго плеча:" textFill="WHITE" />
+    <Label layoutX="5.0" layoutY="375.0" text="Первый исход:" textFill="WHITE" />
+    <Label layoutX="5.0" layoutY="415.0" text="Второй исход:" textFill="WHITE" />
+   <Button fx:id="save" layoutX="227.0" layoutY="450.0" mnemonicParsing="false" style="-fx-background-color: #252525; -fx-border-color: WHITE;" text="Сохранить" textFill="WHITE" />
+</AnchorPane>

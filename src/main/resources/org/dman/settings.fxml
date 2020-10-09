@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="240.0" prefWidth="700.0" style="-fx-background-color: #252525;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.dman.SettingsController">
+    <Label layoutX="50.0" layoutY="10.0" prefWidth="65.0" text="Рубль" textFill="WHITE">
+        <font>
+            <Font size="14.0" />
+        </font>
+    </Label>
+    <Label layoutX="50.0" layoutY="50.0" prefWidth="65.0" text="Доллар" textFill="WHITE">
+        <font>
+            <Font size="14.0" />
+        </font>
+    </Label>
+    <Label layoutX="50.0" layoutY="90.0" prefWidth="65.0" text="Евро" textFill="WHITE">
+        <font>
+            <Font size="14.0" />
+        </font>
+    </Label>
+    <Label layoutX="50.0" layoutY="130.0" prefWidth="65.0" text="Bitcoin" textFill="WHITE">
+        <font>
+            <Font size="14.0" />
+        </font>
+    </Label>
+    <Label layoutX="50.0" layoutY="170.0" prefWidth="65.0" text="Ethereum" textFill="WHITE">
+        <font>
+            <Font size="14.0" />
+        </font>
+    </Label>
+    <Label layoutX="50.0" layoutY="210.0" prefWidth="65.0" text="Ripple" textFill="WHITE">
+        <font>
+            <Font size="14.0" />
+        </font>
+    </Label>
+    <Label fx:id="labelUSD" layoutX="190.0" layoutY="50.0" prefWidth="180.0" text="Получать автоматически" textFill="WHITE">
+        <font>
+            <Font size="14.0" />
+        </font>
+    </Label>
+    <Label fx:id="labelEUR" layoutX="190.0" layoutY="90.0" prefWidth="180.0" text="Получать автоматически" textFill="WHITE">
+        <font>
+            <Font size="14.0" />
+        </font>
+    </Label>
+    <Label fx:id="labelBTC" layoutX="190.0" layoutY="130.0" prefWidth="180.0" text="Получать автоматически" textFill="WHITE">
+        <font>
+            <Font size="14.0" />
+        </font>
+    </Label>
+    <Label fx:id="labelETH" layoutX="190.0" layoutY="170.0" prefWidth="180.0" text="Получать автоматически" textFill="WHITE">
+        <font>
+            <Font size="14.0" />
+        </font>
+    </Label>
+    <Label fx:id="labelXRP" layoutX="190.0" layoutY="210.0" prefWidth="180.0" text="Получать автоматически" textFill="WHITE">
+        <font>
+            <Font size="14.0" />
+        </font>
+    </Label>
+    <Label layoutX="500.0" layoutY="10.0" prefWidth="80.0" text="Округление" textFill="WHITE">
+        <font>
+            <Font size="14.0" />
+        </font>
+    </Label>
+    <Label layoutX="500.0" layoutY="50.0" prefWidth="80.0" text="Округление" textFill="WHITE">
+        <font>
+            <Font size="14.0" />
+        </font>
+    </Label>
+    <Label layoutX="500.0" layoutY="90.0" prefWidth="80.0" text="Округление" textFill="WHITE">
+        <font>
+            <Font size="14.0" />
+        </font>
+    </Label>
+    <Label layoutX="500.0" layoutY="130.0" prefWidth="80.0" text="Округление" textFill="WHITE">
+        <font>
+            <Font size="14.0" />
+        </font>
+    </Label>
+    <Label layoutX="500.0" layoutY="170.0" prefWidth="80.0" text="Округление" textFill="WHITE">
+        <font>
+            <Font size="14.0" />
+        </font>
+    </Label>
+    <Label layoutX="500.0" layoutY="210.0" prefWidth="80.0" text="Округление" textFill="WHITE">
+        <font>
+            <Font size="14.0" />
+        </font>
+    </Label>
+    <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="10.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+        <Image url="@assets/rub.png" />
+    </ImageView>
+    <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="10.0" layoutY="45.0" pickOnBounds="true" preserveRatio="true">
+        <Image url="@assets/usd.png" />
+    </ImageView>
+    <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="10.0" layoutY="85.0" pickOnBounds="true" preserveRatio="true">
+        <Image url="@assets/eur.png" />
+    </ImageView>
+    <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="10.0" layoutY="125.0" pickOnBounds="true" preserveRatio="true">
+        <Image url="@assets/btc.png" />
+    </ImageView>
+    <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="10.0" layoutY="165.0" pickOnBounds="true" preserveRatio="true">
+        <Image url="@assets/eth.png" />
+    </ImageView>
+    <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="10.0" layoutY="205.0" pickOnBounds="true" preserveRatio="true">
+        <Image url="@assets/xrp.png" />
+    </ImageView>
+    <ToggleButton fx:id="toggleUSD" contentDisplay="GRAPHIC_ONLY" layoutX="125.0" layoutY="41.0" prefWidth="30.0" style="-fx-background-color: #252525;" />
+    <ToggleButton fx:id="toggleEUR" contentDisplay="GRAPHIC_ONLY" layoutX="125.0" layoutY="81.0" prefWidth="30.0" style="-fx-background-color: #252525;" />
+    <ToggleButton fx:id="toggleBTC" contentDisplay="GRAPHIC_ONLY" layoutX="125.0" layoutY="121.0" prefWidth="30.0" style="-fx-background-color: #252525;" />
+    <ToggleButton fx:id="toggleETH" contentDisplay="GRAPHIC_ONLY" layoutX="125.0" layoutY="161.0" prefWidth="30.0" style="-fx-background-color: #252525;" />
+    <ToggleButton fx:id="toggleXRP" contentDisplay="GRAPHIC_ONLY" layoutX="125.0" layoutY="201.0" prefWidth="30.0" style="-fx-background-color: #252525;" />
+   <TextField fx:id="editUSD" disable="true" layoutX="380.0" layoutY="47.0" prefWidth="100.0" style="-fx-background-color: #252525; -fx-border-color: #ffffff; -fx-text-inner-color: #ffffff;" />
+    <TextField fx:id="editEUR" disable="true" layoutX="380.0" layoutY="87.0" prefWidth="100.0" style="-fx-background-color: #252525; -fx-border-color: #ffffff; -fx-text-inner-color: #ffffff;" />
+    <TextField fx:id="editBTC" disable="true" layoutX="380.0" layoutY="127.0" prefWidth="100.0" style="-fx-background-color: #252525; -fx-border-color: #ffffff; -fx-text-inner-color: #ffffff;" />
+    <TextField fx:id="editETH" disable="true" layoutX="380.0" layoutY="167.0" prefWidth="100.0" style="-fx-background-color: #252525; -fx-border-color: #ffffff; -fx-text-inner-color: #ffffff;" />
+    <TextField fx:id="editXRP" disable="true" layoutX="380.0" layoutY="207.0" prefWidth="100.0" style="-fx-background-color: #252525; -fx-border-color: #ffffff; -fx-text-inner-color: #ffffff;" />
+   <MenuButton fx:id="roundingRUB" layoutX="590.0" layoutY="7.0" prefWidth="100.0" style="-fx-background-color: #252525; -fx-border-color: #fafafa;" text="1" textFill="WHITE">
+     <items>
+         <MenuItem fx:id="roundRUB1" text="1" />
+         <MenuItem fx:id="roundRUB5" text="5" />
+         <MenuItem fx:id="roundRUB10" text="10" />
+         <MenuItem fx:id="roundRUB50" text="50" />
+         <MenuItem fx:id="roundRUB100" text="100" />
+         <MenuItem fx:id="roundRUB500" text="500" />
+         <MenuItem fx:id="roundRUB1000" text="1000" />
+     </items>
+   </MenuButton>
+    <MenuButton fx:id="roundingUSD" layoutX="590.0" layoutY="47.0" prefWidth="100.0" style="-fx-background-color: #252525; -fx-border-color: #fafafa;" text="1" textFill="WHITE">
+        <items>
+            <MenuItem fx:id="roundUSD1" text="1" />
+            <MenuItem fx:id="roundUSD5" text="5" />
+            <MenuItem fx:id="roundUSD10" text="10" />
+            <MenuItem fx:id="roundUSD50" text="50" />
+            <MenuItem fx:id="roundUSD100" text="100" />
+            <MenuItem fx:id="roundUSD500" text="500" />
+            <MenuItem fx:id="roundUSD1000" text="1000" />
+        </items>
+    </MenuButton>
+    <MenuButton fx:id="roundingEUR" layoutX="590.0" layoutY="87.0" prefWidth="100.0" style="-fx-background-color: #252525; -fx-border-color: #fafafa;" text="1" textFill="WHITE">
+        <items>
+            <MenuItem fx:id="roundEUR1" text="1" />
+            <MenuItem fx:id="roundEUR5" text="5" />
+            <MenuItem fx:id="roundEUR10" text="10" />
+            <MenuItem fx:id="roundEUR50" text="50" />
+            <MenuItem fx:id="roundEUR100" text="100" />
+            <MenuItem fx:id="roundEUR500" text="500" />
+            <MenuItem fx:id="roundEUR1000" text="1000" />
+        </items>
+    </MenuButton>
+    <MenuButton fx:id="roundingBTC" layoutX="590.0" layoutY="127.0" prefWidth="100.0" style="-fx-background-color: #252525; -fx-border-color: #fafafa;" text="0.00001" textFill="WHITE">
+        <items>
+            <MenuItem fx:id="roundBTC0_000001" text="0.000001" />
+            <MenuItem fx:id="roundBTC0_00001" text="0.00001" />
+            <MenuItem fx:id="roundBTC0_0001" text="0.0001" />
+            <MenuItem fx:id="roundBTC0_001" text="0.001" />
+            <MenuItem fx:id="roundBTC0_01" text="0.01" />
+            <MenuItem fx:id="roundBTC0_1" text="0.1" />
+        </items>
+    </MenuButton>
+    <MenuButton fx:id="roundingETH" layoutX="590.0" layoutY="167.0" prefWidth="100.0" style="-fx-background-color: #252525; -fx-border-color: #fafafa;" text="0.00001" textFill="WHITE">
+        <items>
+            <MenuItem fx:id="roundETH0_000001" text="0.000001" />
+            <MenuItem fx:id="roundETH0_00001" text="0.00001" />
+            <MenuItem fx:id="roundETH0_0001" text="0.0001" />
+            <MenuItem fx:id="roundETH0_001" text="0.001" />
+            <MenuItem fx:id="roundETH0_01" text="0.01" />
+            <MenuItem fx:id="roundETH0_1" text="0.1" />
+            <MenuItem fx:id="roundETH1" text="1" />
+        </items>
+    </MenuButton>
+    <MenuButton fx:id="roundingXRP" layoutX="590.0" layoutY="207.0" prefWidth="100.0" style="-fx-background-color: #252525; -fx-border-color: #fafafa;" text="0.01" textFill="WHITE">
+        <items>
+            <MenuItem fx:id="roundXRP0_000001" text="0.000001" />
+            <MenuItem fx:id="roundXRP0_00001" text="0.00001" />
+            <MenuItem fx:id="roundXRP0_0001" text="0.0001" />
+            <MenuItem fx:id="roundXRP0_001" text="0.001" />
+            <MenuItem fx:id="roundXRP0_01" text="0.01" />
+            <MenuItem fx:id="roundXRP0_1" text="0.1" />
+            <MenuItem fx:id="roundXRP1" text="1" />
+            <MenuItem fx:id="roundXRP5" text="5" />
+            <MenuItem fx:id="roundXRP10" text="10" />
+            <MenuItem fx:id="roundXRP50" text="50" />
+            <MenuItem fx:id="roundXRP100" text="100" />
+            <MenuItem fx:id="roundXRP500" text="500" />
+            <MenuItem fx:id="roundXRP1000" text="1000" />
+        </items>
+    </MenuButton>
+   <SplitMenuButton fx:id="getCurrency" layoutX="125.0" layoutY="7.0" prefHeight="27.0" prefWidth="355.0" style="-fx-color: #252525; -fx-background-color: #252525;" text="Получить актуальные курсы валют (EXMO + ЦБ РФ)" textFill="WHITE">
+     <items>
+       <MenuItem fx:id="exmo" mnemonicParsing="false" style="-fx-color: #252525; -fx-background-color: #252525; -fx-fill: #252525;" text="Получить актуальные курсы валют (EXMO + ЦБ РФ)" />
+       <MenuItem fx:id="binance" mnemonicParsing="false" style="-fx-color: #252525; -fx-background-color: #252525;" text="Получить актуальные курсы валют (Binance + ЦБ РФ)" />
+     </items>
+   </SplitMenuButton>
+</AnchorPane>

@@ -1,0 +1,41 @@
+plugins {
+    id 'application'
+    id 'org.openjfx.javafxplugin' version '0.0.9'
+    id 'com.gluonhq.client-gradle-plugin' version '0.1.33'
+}
+
+group 'org.dman'
+version '0.3'
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
+
+repositories {
+    mavenCentral()
+}
+
+javafx {
+    version = "15"
+    modules = ['javafx.controls', 'javafx.fxml']
+}
+
+gluonClient {
+    reflectionList = ['org.dman.Controller' ,'org.dman.JournalController', 'org.dman.SettingsController', 'org.dman.MessageController',
+                      'javafx.scene.control.SplitMenuButton', 'javafx.scene.control.MenuButton', 'javafx.scene.control.MenuItem',
+                      'javafx.scene.control.Tooltip', 'javafx.scene.control.TitledPane', 'javafx.scene.control.DatePicker',
+                      'org.apache.commons.logging.LogFactory', 'org.apache.commons.logging.impl.LogFactoryImpl',
+                      'org.apache.commons.logging.impl.SimpleLog', 'com.sun.jna.LastErrorException', 'com.sun.jna.platform.win32.Win32Exception', 'org.postgresql.PGProperty']
+    compilerArgs = ['--allow-incomplete-classpath']
+}
+
+mainClassName = 'SurebetsCalculator/org.dman.Main'
+
+dependencies {
+    //testImplementation group: 'junit', name: 'junit', version: '4.12'
+    implementation 'org.openjfx:javafx-controls:15'
+    implementation 'org.openjfx:javafx-fxml:15'
+    implementation 'com.konghq:unirest-java:3.11.00'
+    implementation 'org.postgresql:postgresql:42.2.16'
+    implementation 'net.java.dev.jna:jna-platform:5.6.0'
+}

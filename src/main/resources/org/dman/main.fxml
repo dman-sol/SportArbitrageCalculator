@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="230.0" prefWidth="660.0" style="-fx-background-color: #252525;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.dman.Controller">
+      <AnchorPane prefHeight="15" prefWidth="660.0" style="-fx-background-color: #6f4f29;">
+            <Label alignment="CENTER" layoutX="10.0" prefHeight="15.0" prefWidth="100.0" text="БК" textFill="WHITE" />
+            <Label alignment="CENTER" layoutX="120.0" prefHeight="15.0" prefWidth="100.0" text="Коэффициенты" textFill="WHITE" />
+            <Label alignment="CENTER" layoutX="230.0" prefHeight="15.0" prefWidth="100.0" text="Сумма" textFill="WHITE" />
+            <Label alignment="CENTER" layoutX="340.0" prefHeight="15.0" prefWidth="100.0" text="Валюта" textFill="WHITE" />
+            <Label alignment="CENTER" layoutX="450.0" prefHeight="15.0" prefWidth="100.0" text="Доход" textFill="WHITE" />
+            <Label alignment="CENTER" layoutX="560.0" prefHeight="15.0" prefWidth="100.0" text="Распределение" textFill="WHITE" />
+      </AnchorPane>
+      <MenuButton fx:id="bk_1" layoutX="10.0" layoutY="25" prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #252525; -fx-border-color: #fafafa;" text="БК 1" textFill="WHITE">
+        <items>
+          <MenuItem fx:id="stake_1" text="Stake" />
+          <MenuItem fx:id="bet365_1" text="Bet365" />
+          <MenuItem fx:id="vulkan_1" text="Vulkan" />
+          <MenuItem fx:id="lootbet_1" text="Loot.bet" />
+          <MenuItem text="1xBet" fx:id="xbet_1" />
+          <MenuItem fx:id="thunderpick_1" text="ThunderPick" />
+          <MenuItem fx:id="parimatch_1" text="Parimatch" />
+          <MenuItem fx:id="ggbet_1" text="gg.bet" />
+        </items>
+      </MenuButton>
+      <MenuButton fx:id="bk_2" layoutX="10.0" layoutY="65.0" prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #252525; -fx-border-color: #fafafa; -fx-text-inner-color: #fafafa;" text="БК 2" textFill="WHITE">
+         <items>
+            <MenuItem fx:id="stake_2" text="Stake" />
+            <MenuItem fx:id="bet365_2" text="Bet365" />
+            <MenuItem fx:id="vulkan_2" text="Vulkan" />
+            <MenuItem fx:id="lootbet_2" text="Loot.bet" />
+             <MenuItem text="1xBet" fx:id="xbet_2" />
+            <MenuItem fx:id="thunderpick_2" text="ThunderPick" />
+            <MenuItem fx:id="parimatch_2" text="Parimatch" />
+            <MenuItem fx:id="ggbet_2" text="gg.bet" />
+         </items>
+      </MenuButton>
+      <MenuButton fx:id="currency_1" layoutX="340.0" layoutY="25.0" prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #252525; -fx-border-color: #fafafa;" text="RUB" textFill="WHITE">
+         <items>
+            <MenuItem fx:id="RUB_1" text="RUB" />
+            <MenuItem fx:id="USD_1" text="USD" />
+            <MenuItem fx:id="EUR_1" text="EUR" />
+            <MenuItem fx:id="BTC_1" text="BTC" />
+            <MenuItem fx:id="ETH_1" text="ETH" />
+            <MenuItem fx:id="XRP_1" text="XRP" />
+         </items>
+      </MenuButton>
+      <MenuButton fx:id="currency_2" layoutX="340.0" layoutY="65.0" prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #252525; -fx-border-color: #fafafa;" text="RUB" textFill="WHITE">
+         <items>
+            <MenuItem fx:id="RUB_2" text="RUB" />
+            <MenuItem fx:id="USD_2" text="USD" />
+            <MenuItem fx:id="EUR_2" text="EUR" />
+            <MenuItem fx:id="BTC_2" text="BTC" />
+            <MenuItem fx:id="ETH_2" text="ETH" />
+            <MenuItem fx:id="XRP_2" text="XRP" />
+         </items>
+      </MenuButton>
+      <MenuButton fx:id="currency_3" layoutX="340.0" layoutY="105.0" prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #252525; -fx-border-color: #fafafa;" text="RUB" textFill="WHITE">
+         <items>
+            <MenuItem fx:id="RUB_3" text="RUB" />
+            <MenuItem fx:id="USD_3" text="USD" />
+            <MenuItem fx:id="EUR_3" text="EUR" />
+            <MenuItem fx:id="BTC_3" text="BTC" />
+            <MenuItem fx:id="ETH_3" text="ETH" />
+            <MenuItem fx:id="XRP_3" text="XRP" />
+         </items>
+      </MenuButton>
+    <Button fx:id="openSettings" layoutX="595.0" layoutY="185.0" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: #252525; -fx-border-color: #fafafa;">
+        <tooltip><Tooltip text="Настройки" /></tooltip>
+    </Button>
+    <Button fx:id="addToJournal" layoutX="485.0" layoutY="105.0" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: #252525; -fx-border-color: #fafafa;">
+        <tooltip><Tooltip text="Добавить вилку в журнал" /></tooltip>
+    </Button>
+    <Button fx:id="openJournal" layoutX="595.0" layoutY="145.0" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: #252525; -fx-border-color: #fafafa;">
+        <tooltip><Tooltip text="Статистика" /></tooltip>
+    </Button>
+   <Button fx:id="completeFirstLeverage" layoutX="230.0" layoutY="145.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #252525; -fx-border-color: #ffffff;" text="Докрыть 1 плечо" textFill="WHITE" wrapText="true">
+      <font>
+         <Font size="10.0" />
+      </font></Button>
+   <Button fx:id="completeSecondLeverage" layoutX="340.0" layoutY="145.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #252525; -fx-border-color: #ffffff;" text="Докрыть 2 плечо" textFill="WHITE" wrapText="true">
+      <font>
+         <Font size="10.0" />
+      </font></Button>
+      <TextField fx:id="coefficient_1" layoutX="120.0" layoutY="25.0" prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #252525; -fx-border-color: #fafafa; -fx-text-inner-color: #fafafa;" text="2" />
+      <TextField fx:id="coefficient_2" layoutX="120.0" layoutY="65.0" prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #252525; -fx-border-color: #fafafa; -fx-text-inner-color: #fafafa;" text="2" />
+      <TextField fx:id="leverage_1" layoutX="230.0" layoutY="25.0" prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #252525; -fx-border-color: #fafafa; -fx-text-inner-color: #fafafa;" text="50" />
+      <TextField fx:id="leverage_2" layoutX="230.0" layoutY="65.0" prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #252525; -fx-border-color: #fafafa; -fx-text-inner-color: #fafafa;" text="50" />
+      <TextField fx:id="leverage_3" layoutX="230.0" layoutY="105.0" prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #252525; -fx-border-color: #fafafa; -fx-text-inner-color: #fafafa;" text="100" />
+      <TextField fx:id="completeCoefficient" layoutX="10.0" layoutY="145.0" prefHeight="30.0" prefWidth="210.0" promptText="Доступный коэффициент" style="-fx-background-color: #252525; -fx-border-color: #fafafa; -fx-text-inner-color: #fafafa;" />
+      <ToggleButton fx:id="leverageFix_1" layoutX="303.0" layoutY="25.0" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: #252525; -fx-border-color: #fafafa;">
+         <font>
+            <Font size="9.0" />
+         </font></ToggleButton>
+      <ToggleButton fx:id="leverageFix_2" layoutX="303.0" layoutY="65.0" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: #252525; -fx-border-color: #fafafa;">
+         <font>
+            <Font size="9.0" />
+         </font></ToggleButton>
+      <ToggleButton fx:id="leverageFix_3" layoutX="303.0" layoutY="105.0" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: #252525; -fx-border-color: #fafafa;">
+         <font>
+            <Font size="9.0" />
+         </font></ToggleButton>
+      <ToggleButton fx:id="profitOnFirstLeverage" layoutX="595.0" layoutY="25.0" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: #252525; -fx-border-color: #fafafa;" />
+      <ToggleButton fx:id="profitOnSecondLeverage" layoutX="595.0" layoutY="65.0" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: #252525; -fx-border-color: #fafafa;" />
+      <ToggleButton fx:id="profitOnThirdLeverage" layoutX="595.0" layoutY="105.0" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: #252525; -fx-border-color: #fafafa;" />
+      <Label fx:id="profitabilityPercentage" alignment="CENTER" layoutX="10.0" layoutY="105.0" prefHeight="30.0" prefWidth="100.0" text="0" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="firstProfit" alignment="CENTER" layoutX="450.0" layoutY="25.0" prefHeight="30.0" prefWidth="100.0" text="0" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="secondProfit" alignment="CENTER" layoutX="450.0" layoutY="65.0" prefHeight="30.0" prefWidth="100.0" text="0" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="10.0" layoutY="185.0" prefHeight="30.0" prefWidth="210.0" text="Необходимая сумма для перекрытия:" textFill="WHITE" />
+      <Label fx:id="requiredAmount" alignment="CENTER" layoutX="230.0" layoutY="185.0" prefHeight="30.0" prefWidth="210.0" text="0" textFill="WHITE" />
+      <Label fx:id="newFirstProfit" alignment="CENTER" layoutX="450.0" layoutY="145.0" prefHeight="30.0" prefWidth="100.0" text="0" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="newSecondProfit" alignment="CENTER" layoutX="450.0" layoutY="185.0" prefHeight="30.0" prefWidth="100.0" text="0" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   <Label layoutX="120.0" layoutY="105.0" prefHeight="30.0" prefWidth="100.0" text="\% вилки" textFill="WHITE" />
+</AnchorPane>

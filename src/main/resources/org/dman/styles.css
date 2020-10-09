@@ -1,0 +1,13 @@
+.label .text {
+    -fx-strikethrough: true;
+}
+
+.button  {
+    -fx-background-color: #252525;
+    -fx-border-color: #fafafa;
+}
+
+.toggle-button  {
+    -fx-background-color: #252525;
+    -fx-border-color: #fafafa;
+}
