@@ -4,7 +4,7 @@ import java.sql.*;
 
 public class DatabaseHandler {
     public Connection getDbConnection() throws SQLException {
-        return DriverManager.getConnection("jdbc:postgresql:SurebetsDB", "postgres", "326159");
+        return DriverManager.getConnection("jdbc:postgresql:SurebetsDB", "postgres", "123456");
     }
 
     public void toDatabase(String dateTime, String eventName, String percentage, String profit, String firstValute, String secondValute, String thirdValute,
